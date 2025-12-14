@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<head>
+    
+    <title>Login Page</title>
+    <link rel="stylesheet" href="todatysclass.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <h1>Register</h1>
+
+        <form>
+            <input type="text" id="username" placeholder="Username" required>
+
+            
+            <input type="password" placeholder="Password" required>
+
+            <button type="submit">Enter</button>
+        </form>
+
+        <p class="note"><b>Welcome to the World of chaos and heels to </b></p>
+    </div>
+
+   <script>
+document.querySelector("form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let user = document.getElementById("username").value;
+    localStorage.setItem("loggedUser", user);
+
+    window.location.href = "hero.html";
+});
+</script>
+
+
+
+
+<nav class="navbar">
+    <a href="homepage.html">Home</a>
+    
+    <a href="webapplication.html">Login</a>
+</nav>
+
+
+
+
+
+
+</body>
+</html>

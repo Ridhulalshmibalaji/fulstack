@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+  
+  <title>Luxury Store</title>
+
+  <link rel="stylesheet" href="her.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  
+  <header class="navbar">
+    <div class="logo">LUXE</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Designed for Quiet Power</h1>
+      <p>Heels and bags shaped by restraint.</p>
+      <a href="#categories" class="cta">Explore Collection</a>
+    </div>
+
+    <div class="hero-image">
+      <img src="bag.jpeg" alt="Luxury bag model">
+    </div>
+  </section>
+
+  
+  <section id="categories" class="categories">
+
+    <a href="homepage.html" class="category-link">
+ <div class="category-card" onclick="goToHeels()">
+  <img src="heel.jpeg">
+  <span>HEELS</span>
+</div>
+
+
+</a>
+
+
+    <div class="category-card">
+      <img src="ring.jpeg" alt="Luxury bags">
+      <span>BAGS</span>
+    </div>
+
+  </section>
+
+  <script>
+  function goToHeels() {
+    window.location.href = "homepage.html";
+  }
+</script>
+
+
+</body>
+</html>
